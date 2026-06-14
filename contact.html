@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact Us — Gadget Galaxy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <div class="container nav">
+      <a class="brand" href="index.html">Gadget Galaxy</a>
+      <nav class="main-nav">
+        <a href="products.html">Products</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact">
+    <h1>Contact Us</h1>
+    <form id="contactForm" class="card">
+      <label>Name</label>
+      <input required />
+      <label>Email</label>
+      <input type="email" required />
+      <label>Message</label>
+      <textarea required></textarea>
+      <button class="btn">Send Message</button>
+    </form>
+  </main>
+
+  <footer class="footer small"><div class="container">© 2026 Gadget Galaxy</div></footer>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', e => { e.preventDefault(); alert('Message sent (demo)'); });
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Login — Gadget Galaxy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="auth container">
+    <div class="card auth-card">
+      <h2>Login</h2>
+      <form id="loginForm">
+        <label>Email</label>
+        <input type="email" required />
+        <label>Password</label>
+        <input type="password" required />
+        <button class="btn">Login</button>
+      </form>
+      <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+    </div>
+  </main>
+  <script>document.getElementById('loginForm').addEventListener('submit', e => { e.preventDefault(); alert('Login (demo)'); });</script>
+</body>
+</html>

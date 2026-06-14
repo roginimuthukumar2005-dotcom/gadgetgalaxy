@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Signup — Gadget Galaxy</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="auth container">
+    <div class="card auth-card">
+      <h2>Create account</h2>
+      <form id="signupForm">
+        <label>Name</label>
+        <input required />
+        <label>Email</label>
+        <input type="email" required />
+        <label>Password</label>
+        <input type="password" required />
+        <button class="btn">Sign up</button>
+      </form>
+    </div>
+  </main>
+  <script>document.getElementById('signupForm').addEventListener('submit', e => { e.preventDefault(); alert('Signed up (demo)'); });</script>
+</body>
+</html>

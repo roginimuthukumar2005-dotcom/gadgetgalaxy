@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Gadget Galaxy — Products</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="nav-wrap">
+    <div class="container nav">
+      <a class="brand" href="index.html">Gadget Galaxy</a>
+      <nav class="main-nav">
+        <a href="products.html">Products</a>
+        <a href="about.html">About</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="search">
+          <input id="searchInputProd" placeholder="Search products..." />
+        </div>
+        <a href="wishlist.html" class="icon">♡ <span id="wishCount">0</span></a>
+        <a href="cart.html" class="icon">🛒 <span id="cartCount">0</span></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="products-layout">
+      <aside class="filters">
+        <h3>Filters</h3>
+        <label>Category</label>
+        <select id="categoryFilter">
+          <option value="all">All</option>
+        </select>
+        <label>Sort</label>
+        <select id="sortBy">
+          <option value="default">Default</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+        </select>
+      </aside>
+
+      <section class="products">
+        <div class="products-header">
+          <h2>Products</h2>
+          <div id="resultsInfo"></div>
+        </div>
+        <div id="productsGrid" class="grid"></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer small">
+    <div class="container">© 2026 Gadget Galaxy</div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
